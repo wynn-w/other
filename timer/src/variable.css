@@ -1,0 +1,13 @@
+:root {
+    --bg-default    : #000000;
+    --bg-green      : #0e2c14;
+    --bg-green-hover: #678b6e;
+    --txt-green     : #41b665;
+    --bg-red        : #360e0f;
+    --bg-red-hover  : #8a6063;
+    --txt-red       : #d95d5b;
+    --bg-grey       : #343434;
+    --bg-grey-hover : #8d8a8a;
+    --txt-white     : #ffffff;
+    --min-width     : 300px
+}

@@ -1,0 +1,144 @@
+@import url('variable.css');
+
+* {
+    margin    : 0;
+    padding   : 0;
+    box-sizing: border-box;
+    font-size : 14px;
+}
+
+body {
+    background-color: var(--bg-default);
+}
+
+
+/* ----------------------   页面布局   --------------------------- */
+.box {
+    min-width      : var(--min-width);
+    height         : 100vh;
+    display        : flex;
+    flex-direction : column;
+    justify-content: center;
+    align-items    : center;
+    color          : var(--txt-white);
+}
+
+.content {
+    font-size: 50px;
+}
+
+.control {
+    width          : var(--min-width);
+    display        : flex;
+    flex-direction : row;
+    justify-content: space-around;
+    margin-top     : 4rem;
+}
+
+/* ----------------------   页面布局 结束   --------------------------- */
+
+
+/* ----------------------   按钮初始化   --------------------------- */
+
+.btn {
+    width          : 4.3rem;
+    height         : 4.3rem;
+    border-radius  : 50%;
+    position       : relative;
+    z-index        : 1;
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+}
+
+.btn::before {
+    content         : '';
+    width           : 4rem;
+    height          : 4rem;
+    border-radius   : 50%;
+    background-color: var(--bg-default);
+    position        : absolute;
+    top             : 50%;
+    left            : 50%;
+    transform       : translate(-50%, -50%);
+    z-index         : 0;
+}
+
+.btn::after {
+    content      : '';
+    width        : 3.7rem;
+    height       : 3.7rem;
+    border-radius: 50%;
+    position     : absolute;
+    top          : 50%;
+    left         : 50%;
+    transform    : translate(-50%, -50%);
+    z-index      : 2;
+}
+
+.btn>p {
+    z-index: 9;
+}
+
+/* ----------------------   按钮初始化 结束  --------------------------- */
+
+
+/* ----------------------   按钮定制   --------------------------- */
+.start {
+    color           : var(--txt-green) !important;
+    background-color: var(--bg-green);
+
+}
+
+.start:hover {
+    opacity   : 0.8;
+    box-shadow: inset 0 0 10px var(--bg-green-hover);
+}
+
+.start::after {
+    content         : '';
+    background-color: var(--bg-green);
+}
+
+
+.stop {
+    display         : none;
+    color           : var(--txt-red) !important;
+    background-color: var(--bg-red);
+}
+
+.stop:hover {
+    opacity   : 0.8;
+    box-shadow: inset 0 0 10px var(--bg-red-hover);
+}
+
+.stop::after {
+    content         : '';
+    background-color: var(--bg-red);
+}
+
+.reset {
+    visibility      : hidden;
+    color           : var(--txt-white) !important;
+    background-color: var(--bg-grey);
+}
+
+.reset:hover {
+    opacity   : 0.8;
+    box-shadow: inset 0 0 10px var(--bg-grey-hover);
+}
+
+.reset::after {
+    content         : '';
+    background-color: var(--bg-grey);
+}
+
+
+.start,
+.stop,
+.reset {
+    cursor    : pointer;
+    transition: all .2s ease-in-out;
+}
+
+/* ----------------------   按钮定制色 结束  --------------------------- */
