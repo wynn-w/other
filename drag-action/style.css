@@ -1,0 +1,26 @@
+.source-box {
+    width: 400px;
+    height: 400px;
+    border: 1px solid #333;
+}
+
+.source-box>div,
+.target-box>div {
+    width: 98px;
+    height: 98px;
+    border: 1px solid #333;
+    border-radius: 50%;
+    background-color: red;
+    float: left;
+    text-align: center;
+    line-height: 98px;
+}
+
+.target-box {
+    width: 400px;
+    height: 400px;
+    border: 1px solid #333;
+    position: absolute;
+    right: 10px;
+    bottom: 300px;
+}
