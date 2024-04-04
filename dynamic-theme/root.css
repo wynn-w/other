@@ -1,0 +1,9 @@
+:root {
+    --font-color: brown;
+    --button-color: yellow;
+}
+
+:root[data-theme=theme2] {
+    --font-color: blue;
+    --button-color: green;
+}

@@ -1,0 +1,7 @@
+# Dynamic Theme
+| core: use :root decare global varible
+##  CSS Style Overriding
+**scenarios**: predefined theme colors
+##  CSS Variable Substitution
+replacing CSS global variable values ​​with JavaScript.    
+**scenarios**: user-customized theme colors
